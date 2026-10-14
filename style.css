@@ -1,1 +1,53 @@
+/* Centraliza o conteúdo na tela */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
 
+.container {
+    text-align: center;
+}
+
+/* Estilo principal do botão */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* Efeito quando o mouse passa por cima (Hover) */
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Sobe ligeiramente */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Efeito ao pressionar o botão (Active) */
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Classe dinâmica que será adicionada via JavaScript ao clicar */
+.btn.sucesso {
+    background-color: #28a745;
+}
+
+/* Estilo do texto de mensagem */
+#mensagem {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
